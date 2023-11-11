@@ -13,7 +13,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
+            flex-direction: column; /* Set flex-direction to column */
         }
 
         h2 {
@@ -80,7 +81,7 @@
             email: formData.get("email"),
             password: formData.get("password"),
             roles: [
-                { id: 1, name: "ADMIN" }  // Replace with a valid role ID or adjust server-side logic
+                {id: 1, name: "ADMIN"}  // Replace with a valid role ID or adjust server-side logic
             ]
         };
 
@@ -105,3 +106,4 @@
 </script>
 </body>
 </html>
+
